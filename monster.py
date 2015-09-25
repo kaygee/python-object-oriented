@@ -1,10 +1,11 @@
 import random
+from combat import Combat
 
 COLORS = ['yellow', 'green', 'red', 'purple']
 WEAPONS = ['dagger', 'plunger', 'sword', 'rusty nail']
 
 
-class Monster:
+class Monster(Combat):
     min_hp = 1
     max_hp = 1
     min_xp = 1
