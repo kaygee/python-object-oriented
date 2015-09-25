@@ -1,18 +1,18 @@
-from monster import Monster
+from monster import Goblin
+from monster import Dragon
+from monster import Troll
+from character import Character
 
-hit_points = 1
-color = 'yellow'
-weapon = 'sword'
-sound = 'tweet'
+player = Character()
 
-print("Jub Jub")
-jubjub = Monster(color='red', sound = 'tweet')
+print(">>> azog <<<")
+azog = Goblin()
+print(azog)
 
-print(jubjub.hit_points)
-print(jubjub.battlecry())
+print(">>> snaga <<<")
+snaga = Troll()
+print(snaga)
 
-print("Ogre")
-
-ogre = Monster(hit_points=10)
-print(ogre.hit_points)
-print(ogre.battlecry())
+print(">>> pete <<<")
+pete = Dragon()
+print(pete)
